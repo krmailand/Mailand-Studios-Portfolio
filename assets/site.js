@@ -25,12 +25,6 @@ if (form) {
       status.classList.add('error');
       return;
     }
-    if (form.action.includes('YOUR_EMAIL')) {
-      event.preventDefault();
-      status.textContent = 'The contact form needs your receiving email configured before it can send messages. See README.md.';
-      status.classList.add('error');
-      return;
-    }
     // FormSubmit handles submission and its first-use email confirmation page.
     // Deliberately submit normally rather than claiming an unconfirmed success.
   });
