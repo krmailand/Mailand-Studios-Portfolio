@@ -1,12 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#111414">
-
   <meta
     name="description"
     content="Contact Kaedn Rhys about filmmaking, editing, performance, and creative collaborations."
@@ -22,7 +19,7 @@
 
   <link rel="stylesheet" href="assets/styles.css">
 
-  <script src="assets/site.js?v=3" defer></script>
+  <script src="assets/site.js?v=4" defer></script>
 </head>
 
 <body>
@@ -167,22 +164,21 @@
           method="POST"
         >
 
-          <!-- FORM SETTINGS -->
-
+          <!-- EMAIL SUBJECT -->
           <input
             type="hidden"
             name="_subject"
             value="New Portfolio Contact Form Message"
           >
 
-          <!-- CORRECT GITHUB PAGES RETURN URL -->
+          <!-- REDIRECT TO CONFIRMATION PAGE -->
           <input
             type="hidden"
             name="_next"
-            value="https://krmailand.github.io/Mailand-Studios-Portfolio/"
+            value="https://krmailand.github.io/Mailand-Studios-Portfolio/thank-you.html"
           >
 
-          <!-- CAPTCHA -->
+          <!-- CAPTCHA PROTECTION -->
           <input
             type="hidden"
             name="_captcha"
