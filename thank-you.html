@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Message Sent | Kaedn Rhys</title>
+
+  <style>
+    :root {
+      --bg: #111414;
+      --accent: #d5ff62;
+      --text: #f5f5f0;
+      --muted: #a5adaa;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 32px 7%;
+      border-bottom: 1px solid #303735;
+    }
+
+    .logo {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 900;
+      letter-spacing: 2px;
+      font-size: 20px;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 70px 24px;
+      text-align: center;
+    }
+
+    .confirmation {
+      max-width: 700px;
+    }
+
+    .check {
+      width: 85px;
+      height: 85px;
+      margin: 0 auto 35px;
+      border: 2px solid var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      font-size: 42px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 13px;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(48px, 9vw, 100px);
+      letter-spacing: -4px;
+      line-height: 1;
+      margin: 24px 0;
+    }
+
+    h1 span {
+      color: var(--accent);
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 17px 35px;
+      background: var(--accent);
+      color: var(--bg);
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .button:hover {
+      background: white;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      padding: 25px 7%;
+      border-top: 1px solid #303735;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a
+      href="index.html"
+      class="logo"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      KAEDN RHYS<span>.</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="confirmation">
+
+      <div class="check" aria-hidden="true">
+        &#10003;
+      </div>
+
+      <div class="eyebrow">
+        MESSAGE CONFIRMATION
+      </div>
+
+      <h1>
+        MESSAGE<br>
+        <span>SENT.</span>
+      </h1>
+
+      <p>
+        Thanks for reaching out!
+      </p>
+
+      <p>
+        Your message has been delivered successfully.
+        I appreciate you taking the time to contact me,
+        and I'll get back to you as soon as I can.
+      </p>
+
+      <a
+        href="index.html"
+        class="button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Back to Portfolio &nearr;
+      </a>
+
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Kaedn Rhys.
+    All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
